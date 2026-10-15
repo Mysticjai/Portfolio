@@ -85,7 +85,9 @@ const ProjectCard = ({ project, idx }: CardProps) => {
       stagger: 0.05,
     }, '-=0.4')
 
-    return () => tl.kill()
+    return () => {
+      tl.kill()
+    }
   }, [idx])
 
   return (
